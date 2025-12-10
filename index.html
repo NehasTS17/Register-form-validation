@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form action="" id="form">
+        <h1>Register</h1>
+        <div class="inp_grp">
+          <label for="username">Username</label>
+          <input
+            type="text"
+            placeholder="Username"
+            name="username"
+            id="username"
+          />
+          <div class="error"></div>
+        </div>
+        <div class="inp_grp">
+          <label for="email">Email</label>
+          <input type="text" placeholder="Email" name="email" id="email" />
+          <div class="error"></div>
+        </div>
+        <div class="inp_grp1">
+          <label for="password">Password</label>
+            <input
+              type="password"
+              placeholder="Password"
+              name="password"
+              id="password"
+            />
+            <img src="media/close.png" class="icon" id="icon1" alt="" />
+          <div class="error"></div>
+        </div>
+        <div class="inp_grp1">
+          <label for="cpassword">Confirm Password</label>
+            <input
+              type="password"
+              placeholder="Confirm Password"
+              name="cpassword"
+              id="cpassword"
+            />
+            <img src="media/close.png" class="icon" id="icon2" alt="" />
+          <div class="error"></div>
+        </div>
+        <button type="submit">Register</button>
+      </form>
+    </div>
+
+    <script src="validation.js"></script>
+  </body>
+</html>
