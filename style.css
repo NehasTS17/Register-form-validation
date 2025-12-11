@@ -1,0 +1,91 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(52, 50, 50);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#form{
+    width: 400px;
+    background-color: rgb(51, 50, 48);
+    margin: 10vh auto 0 auto;
+    border-radius: 45px;
+    padding: 30px;
+    box-shadow: 0px 0px 18px rgba(255, 127, 80, 0.375);
+}
+h1{
+    text-align: center;
+    color: coral;
+}
+#form button{
+    font-weight: bold;
+    width: 100%;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 20px 0px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    background-color: coral;
+}
+.inp_grp{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+.inp_grp1{
+    display: grid;
+    grid-template-areas: 'lab lab''left right';
+    margin-bottom: 15px;
+}
+.inp_grp1 label{
+    grid-area: lab;
+}
+.inp_grp1 input{
+    grid-area: left;
+}
+.icon{
+    grid-area: right;
+}
+.inp_grp label, .inp_grp1 label{
+    color:coral;
+}
+.inp_grp input, .inp_grp1 input{
+    color: white;
+    background-color: rgb(59, 58, 58);
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 5px;
+    padding: 10px;
+    border: 1px solid rgb(195, 139, 34);
+}
+.inp_grp input:focus, .inp_grp1 input:focus{
+    outline: 0;
+}
+.inp_grp .error,
+.inp_grp1 .error{
+    color: red;
+    font-size: 16px;
+    margin-top: 5px;
+}
+.inp_grp.success input,
+.inp_grp1.success input{
+    border-color: green;
+}
+.inp_grp.error input,
+.inp_grp1.error input{
+    border-color: red;
+}
+.icon{
+    margin-left: 70px;
+    height: 30px;
+    width: 40px;
+    margin-top: 5px;
+    padding: 7px;
+    border-radius: 0px 5px 5px 0px;
+    border: 1px solid rgb(195, 139, 34);
+}
+#password, #cpassword{
+    width: 118%;
+    border-radius: 5px 0px 0px 5px;
+}
